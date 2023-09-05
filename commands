@@ -1,0 +1,6 @@
+ng new mfe-element-consumer --no-create-application
+ng g application shell
+ng g application mfe-one
+
+ng add @angular-architects/module-federation --project shell --type host --port 4200
+ng add @angular-architects/module-federation --project mfe-one --type remote --port 4201
